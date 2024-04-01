@@ -42,6 +42,9 @@ public class PizzaRepository {
 		doc.put("comments", comments);
 
 		doc = mongoTemplate.insert(doc, "pizza");
+		
+
+		System.out.printf("Saving Pizza,,,", doc);
 		return doc.getObjectId("_id").toString();
 	}
 

@@ -10,7 +10,7 @@ create table orders (
     order_id char(8) not null,
     name varchar(64) not null,
     email varchar(64) not null,
-    pizza_id char(8) not null
+    pizza_id char(24) not null,
 
     primary key(order_id)
 );

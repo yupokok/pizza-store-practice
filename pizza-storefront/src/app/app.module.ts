@@ -19,7 +19,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [ AppComponent, MainComponent, OrdersComponent ],
   imports: [ BrowserModule,  RouterModule.forRoot(appRoutes, { useHash: true }), ReactiveFormsModule, HttpClientModule ],
-  providers: [PizzaService, HttpClient],
+  providers: [PizzaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

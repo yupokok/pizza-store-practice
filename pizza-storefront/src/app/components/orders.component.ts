@@ -20,7 +20,6 @@ export class OrdersComponent implements OnInit {
     
     this.route.params.subscribe(params => {
       this.email = params['email'];})
-      
       this.pizzaSvc.getOrders(this.email)
   }
   

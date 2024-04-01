@@ -86,8 +86,13 @@ toppingsCheckbox(event: any) {
       comments: this.pizzaForm.get('comments')?.value
     }
     console.info('PLACING THIS ORDER: ', order)
-    this.pizzaSvc.createOrder(order)
-    return order
+    this.pizzaSvc.createOrder(order).then(resp => {
+      console.info('resp: ', resp)
+      this.router.navigate([ '/' ])
+    })
+    .catch(resp => {
+      alert(`ADD ERROR: ${resp.error.message}`)
+    })
   }
 
   pizzaSize = SIZES[0]
