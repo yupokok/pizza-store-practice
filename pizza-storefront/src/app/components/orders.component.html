@@ -1,0 +1,28 @@
+
+<h1>Orders for {{email}} </h1>
+
+
+<div class="order-card" >
+    <table>
+        <tr>
+            <td><h2>Order Id: 3</h2></td>
+        </tr>
+        <tr>
+            <td><h3>{{44 | currency }}</h3></td>
+        </tr>
+    </table>
+</div>
+
+<!-- <div class="order-card" *ngFor="let orderSum of orderSummaries">
+    <table>
+        <tr>
+            <td><h2>Order Id: {{orderSum.id}}</h2></td>
+        </tr>
+        <tr>
+            <td><h3>{{orderSum.amount | currency }}</h3></td>
+        </tr>
+    </table>
+</div> -->
+
+
+<button [routerLink]="['/']"> <h2>Back To Ordering</h2></button>
