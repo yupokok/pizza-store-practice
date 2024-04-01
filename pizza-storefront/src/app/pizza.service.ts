@@ -23,7 +23,7 @@ export class PizzaService {
 
   
   getOrders(email: string): Promise<OrderSummary[]> {
-    this.http.get<OrderSummary[]>(`/api/order/${email}/all`)
+    this.http.get<OrderSummary[]>(`http://localhost:8080/api/order/${email}/all`)
 	  return Promise.resolve<OrderSummary[]>([])
   }
 

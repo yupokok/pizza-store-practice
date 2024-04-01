@@ -19,6 +19,7 @@ public class Order {
 
 	public void setOrderId(Integer orderId) { this.orderId = orderId; }
 	public Integer getOrderId() { return this.orderId; }
+	
 
 	public void setName(String name) { this.name = name; }
 	public String getName() { return this.name; }
