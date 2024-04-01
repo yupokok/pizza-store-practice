@@ -45,7 +45,7 @@ createPizzaForm(): FormGroup {
   return this.pizzaForm = this.builder.group({
     name: this.builder.control<string>('',[Validators.required]),
     email: this.builder.control<string>('', [ Validators.required, Validators.email]),
-    size: this.builder.control<string>(SIZES[1], [ Validators.required ]),
+    size: this.builder.control<number>(2, [ Validators.required ]),
     base: this.builder.control<string>('', [ Validators.required ]),
     sauce: this.builder.control<string>('', [ Validators.required ]),
     toppings: [],

@@ -37,7 +37,6 @@ public class OrderService {
 
         List<String> pizzaIds = orderRepo.getPizzaIdsByEmail(email);
         
-        // Update the amount field of each order summary with the calculated amount
         for (int i = 0; i < orderSummaries.size() && i < pizzaIds.size(); i++) {
             String pizzaId = pizzaIds.get(i);
             Float amount = pizzaRepo.calculateAmountOfPizza(pizzaId);
